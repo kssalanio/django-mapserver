@@ -25,4 +25,4 @@ Installation
 
    .. code:: bash
 
-      pip install git+https://github.com/ricardogsilva/django-mapserver.git#egg=django-mapserver
+      pip install git+https://github.com/kssalanio/django_mapserver.git#egg=django_mapserver
