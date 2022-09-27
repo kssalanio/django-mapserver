@@ -7,7 +7,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-mapserver',
-    version='0.1',
+    version='0.2',
     packages=find_packages(),
     install_requires=['django',],
     include_package_data=True,
@@ -15,8 +15,8 @@ setup(
     description='A Django app that wraps UMN Mapserver.',
     long_description=README,
     url='',
-    author='Ricardo Garcia Silva',
-    author_email='ricardo.garcia.silva@gmail.com',
+    author='Ken Salanio',
+    author_email='kssalanio@@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -24,8 +24,7 @@ setup(
         'License :: OSI Approved :: BSD License', # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
