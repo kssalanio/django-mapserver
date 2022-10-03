@@ -43,7 +43,9 @@ class MapObj(models.Model):
                                              max_length=10)
     cell_size = models.FloatField(help_text="Pixel size in map units.",
                                   blank=True, null=True)
-    extent = models.ForeignKey("RectObj", help_text="Map's spatial extent.")
+    extent = models.ForeignKey("RectObj",
+                                on_delete=models.CASCADE, # Required, cascade because extent is uniquely refered per MapObj
+                                help_text="Map's spatial extent.")
     # font_set
     image_type = models.CharField(max_length=10, choices=IMAGE_TYPE_CHOICES)
     image_color = models.ForeignKey("MapServerColor",
