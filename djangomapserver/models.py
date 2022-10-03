@@ -15,7 +15,7 @@ from django.contrib.gis.gdal import DataSource
 from osgeo import osr
 import mapscript
 
-import validators
+from djangomapserver import validators
 
 STATUS_CHOICES = (
     (mapscript.MS_OFF, "off"),
